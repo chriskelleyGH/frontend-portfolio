@@ -1,0 +1,123 @@
+body {
+	font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.box {
+  text-align: center;
+  width: 100%;
+}
+
+.header {
+	text-align: right;
+}
+
+.header img {
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.name {
+	letter-spacing: 2px;
+	font-weight: lighter;
+	margin: 0px;
+}
+
+.title {
+	color: grey;
+	margin: 0px;
+}
+
+.main-image {
+	margin-top: 20px;
+}
+
+.project {
+	margin-bottom: 20px;
+}
+
+/* Small Screens */
+@media screen and (min-width: 300px) {
+  .container {
+  	display: flex;
+  	flex-wrap: wrap;
+  }
+  .box {
+    width: 100%;
+  }
+
+	.header {
+		margin-left: 20px;
+		margin-right: 20px;
+	}
+
+	.name {
+		font-size: 50px;
+	}
+
+	.title {
+		font-size: 25px;
+	}
+
+	.main-image {
+		margin-left: 20px;
+		margin-right: 20px;
+	}
+}
+
+/* Medium Screens */
+@media screen and (min-width: 600px) {
+	.header {
+		margin-left: 20px;
+		margin-right: 20px;
+	}
+
+	.name {
+    font-size: 60px;
+  }
+
+  .title {
+    font-size: 35px;
+  }
+
+	.main-image {
+		margin-left: 20px;
+		margin-right: 20px;
+	}
+
+	.project {
+    width: 50%;
+  }
+}
+
+/* Large Screens */
+@media screen and (min-width: 950px) {
+  .container {
+    width: 950px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .name {
+    font-size: 60px;
+  }
+
+  .title {
+    font-size: 35px;
+  }
+
+	.middle {
+		margin-left: 15px;
+		text-align: left;
+	}
+
+  .project{
+    width: 25%;
+		font-size: 20px;
+  }
+}
