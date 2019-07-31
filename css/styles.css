@@ -2,9 +2,29 @@ body {
 	font-family: 'Montserrat', sans-serif;
 }
 
-.container {
+header {
+	width: 100%;
+	text-align: right;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+header img {
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+main {
 	display: flex;
 	flex-wrap: wrap;
+	width: 100%;
+}
+
+section {
+	text-align: center;
+	width: 100%;
+	margin-bottom: 20px;
 }
 
 .box {
@@ -12,17 +32,8 @@ body {
   width: 100%;
 }
 
-.header {
-	text-align: right;
-}
-
-.header img {
-	position: relative;
-	top: 50%;
-	transform: translateY(-50%);
-}
-
 .name {
+	text-align: right;
 	letter-spacing: 2px;
 	font-weight: lighter;
 	margin: 0px;
@@ -43,10 +54,15 @@ body {
 
 /* Small Screens */
 @media screen and (min-width: 300px) {
-  .container {
+	section {
+		width: 100%;
+	}
+
+	.container {
   	display: flex;
   	flex-wrap: wrap;
   }
+
   .box {
     width: 100%;
   }
@@ -72,6 +88,10 @@ body {
 
 /* Medium Screens */
 @media screen and (min-width: 600px) {
+	section {
+    width: 50%;
+  }
+
 	.header {
 		margin-left: 20px;
 		margin-right: 20px;
@@ -90,14 +110,19 @@ body {
 		margin-right: 20px;
 	}
 
-	.project {
-    width: 50%;
-  }
+	.box {
+		width: 100%;
+	}
 }
 
 /* Large Screens */
 @media screen and (min-width: 950px) {
-  .container {
+	section {
+    width: 25%;
+		font-size: 20px;
+  }
+
+	.container {
     width: 950px;
     margin-left: auto;
     margin-right: auto;
@@ -116,8 +141,7 @@ body {
 		text-align: left;
 	}
 
-  .project{
-    width: 25%;
-		font-size: 20px;
-  }
+	.box {
+		width: 100%;
+	}
 }
